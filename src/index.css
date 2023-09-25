@@ -1,3 +1,126 @@
+:root {
+  --grey-dark: #404141;
+  --metal: #b2b2b3;
+  --label: #f2f3f3;
+}
+
 body {
   background: #223;
+}
+
+.diskette {
+  background-color: var(--grey-dark);
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  clip-path: polygon(93% 0, 100% 7%, 100% 100%, 0 100%, 0 0);
+}
+
+.diskette-top-container {
+  height: 170px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* .gap_border {
+  height: 100%;
+  width: 90%;
+  border-top: 5px solid  #223;
+} */
+
+.gap {
+  height: 100%;
+  width: 80%;
+  border-bottom-left-radius: 25px;
+  border-left: 3px solid;
+  display: flex;
+  justify-content: center;
+}
+
+.metal {
+  background-color: var(--metal);
+  height: 100%;
+  width: 70%;
+  border-bottom-left-radius: 25px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transform: translateX(10px);
+}
+
+.hole {
+  background-color: var(--grey-dark);
+  width: 50px;
+  height: 80%;
+  transform: translateX(-20px);
+}
+
+.diskette-bottom-container {
+  display: flex;
+  flex-direction: row;
+  height: 330px;
+  width: 100%;
+  align-items: end;
+}
+
+.left-pad-container {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.left-hole {
+  background-color: black;
+  width: 20px;
+  height: 15px;
+  border-radius: 3px;
+  transform: translateY(-35px);
+}
+
+.container-label {
+  width: 80%;
+  height: 90%;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  background-color: var(--label);
+  width: 95%;
+  height: 95%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.lines {
+  width: 90%;
+  height: 85%;
+  background-image: linear-gradient(to bottom, black 0.3px, transparent 0.7px);
+  background-size: 100% 25px;
+}
+
+.right-pad-container {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.rigth-hole {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  transform: translateY(-30px);
 }
